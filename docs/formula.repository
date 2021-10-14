@@ -1,0 +1,58 @@
+\form#0:$C^k_{ab} = <ka||C^k||kb>$
+\form#1:$(-1)^{ja+1/2} C^k_{ab}$
+\form#2:\[ \begin{pmatrix}j1&j2&j3\\m1&m2&m3\end{pmatrix} \]
+\form#3:\[ \begin{pmatrix}j1&j2&k\\-1/2&1/2&0\end{pmatrix} \]
+\form#4:$y^k_{ab}(r)$
+\form#5:\[ W^k_abcd = Q^k_abcd + \sum_l [k] 6j * Q^l_abdc \]
+\form#6:\[ W^k_abcd = Q^k_abcd + \P^k_abcd \]
+\form#7:\[ y^k_{ij}(r) = \int_0^\infty \frac{r_<^k}{r_>^{k+1}}\rho_{ij}(r')\,{\rm d}r' \]
+\form#8:\[\rho(r) = f_i(r)f_j(r) + g_i(r)g_j(r)\]
+\form#9:$r_< = min(r,r')$
+\form#10:$\alpha = \lambda\alpha_0$
+\form#11:\[ (H_0 + v - \epsilon_a)F_a = 0\]
+\form#12:\[ (H_0 + v -\epsilon_a)F_a = S \]
+\form#13:$\psi_\kappa$
+\form#14:$\epsilon$
+\form#15:\[ h = -|e|r^k = -e r^k \]
+\form#16:\[<a||d||b> = R C^k_{ab}\]
+\form#17:\[R = -e \int r^k (f_a f_b + g_a g_b) \, dr\]
+\form#18:\[<a||d||b> = R (-1)^{ja+1/2} \sqrt{[ja][jb]} \, tjs(ja,jb,1, -1/2,1/2,0)\]
+\form#19:\[<a||d||b> = R <k_a||C^k||k_b>\]
+\form#20:\[R = -e \int r(f_a f_b + g_a g_b) \, dr\]
+\form#21:$ \frac{ie}{\omega \alpha} \vec{\alpha}$
+\form#22:\[ <a||d_v||b> = R \]
+\form#23:\[ R = -\frac{2e}{\omega \alpha} \int( f_ag_b <ka||s||-kb> - g_af_b <-ka||s||kb>)\,dr \]
+\form#24:\[ <a||M1||b> = R (k_a + k_b) <-k_a||C^1||k_b> \]
+\form#25:\[R = \frac{-3}{\alpha^2\omega} \int (f_ag_b+g_af_b) j_1(kr) \, dr\]
+\form#26:$ k = \omega/c = \omega*\alpha $
+\form#27:\[ h_{PNCnsi} = -\frac{G_F \, Q_W}{2\sqrt{2}} \, \rho(r) \, \gamma^5. \]
+\form#28:\[ h_{PNCnsi} = \frac{G_F \, Q_W}{2\sqrt{2}} \, \rho(r) \, \gamma_5. \]
+\form#29:\[ (F'|h|F) = -\frac{G_F \, Q_W}{2\sqrt{2}}\int (f'g - g'f) rho(r) dr \]
+\form#30:\[ \hat h_{\rm vertex} = A \alpha \exp(-b r / \lambda_c) \]
+\form#31:\[ \lambda_c = 1/ \alpha \approx 137 \]
+\form#32:\[ (H_{\rm HF} - \epsilon - \omega)\delta\phi = -\hat h \phi \]
+\form#33:$\delta\phi$
+\form#34:$\hat h \phi$
+\form#35:$-\hat h \phi$
+\form#36:\[ (H -\epsilon \pm \omega)\delta\psi_b = -(\delta V + \delta\epsilon_c)\psi_b \]
+\form#37:\[ \langle \phi_a || \delta V || \phi_b \rangle \]
+\form#38:\[ (H + \Sigma - \epsilon - \omega)X = -(h + \delta V - \delta\epsilon)\psi \]
+\form#39:\[ (H + \Sigma - \epsilon + \omega)Y = -(h^\dagger + \delta V^\dagger - \delta\epsilon)Psi\]
+\form#40:$ \chi_\beta $
+\form#41:\[ X_{j,m} = (-1)^{j_\beta-m}tjs(j,k,j;-m,0,m)\chi_j \]
+\form#42:\[ G_a = \frac{|Q^k_amn><Q^k_amn|}{ [k][j] \, de_{amn} } \]
+\form#43:\[ G_b = \frac{|Q^k_amn><P^k_amn|}{ [k][j] \, de_{amn} } \]
+\form#44:\[ G_c = \frac{|Q^k_nba><Q^k_nba|}{ [k][j] \, de_{nba} } \]
+\form#45:\[ G_d = \frac{|Q^k_nba><P^k_nba|}{ [k][j] \, de_{nba} } \]
+\form#46:$ de_{xyz} = e_v + e_x - e_y - e_z $
+\form#47:$\{|i\rangle\}$
+\form#48:$2N$
+\form#49:\[ H_{ij} = \langle{S_i}|\hat H_{\rm HF}|{S_j}\rangle \, , \qquad S_{ij} = \langle{S_i|S_j}\rangle. \]
+\form#50:\[ H_{ij}p_i = \epsilon S_{ij}p_i, \]
+\form#51:$p$
+\form#52:\[ |{n}\rangle = \sum_i^{2N} p_i |i\rangle\, \]
+\form#53:$k\geq l_{\rm max}+3$
+\form#54:$H_{ij}$
+\form#55:$S_{ij}$
+\form#56:\[ \psi_{n\kappa m} = \frac{1}{r} \begin{pmatrix} f_{n\kappa}(r)\,\Omega_{\kappa m}\\ g_{n\kappa}(r)\,\Omega_{-\kappa m} \end{pmatrix}, \quad F_{n\kappa} = \begin{pmatrix} f_{n\kappa}(r)\\ g_{n\kappa}(r) \end{pmatrix} \]
+\form#57:$\lambda$

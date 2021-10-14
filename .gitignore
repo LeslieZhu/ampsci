@@ -19,3 +19,5 @@ doc/tex/*
 !doc/examples/*.in
 !.gitignore
 !*.md
+!docs/
+!docs/*
