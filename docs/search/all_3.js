@@ -1,11 +1,15 @@
 var searchData=
 [
+  ['d',['d',['../classBSpline.html#a001bca228ba8328c705a622e9d111ff4',1,'BSpline']]],
+  ['data',['data',['../classLinAlg_1_1Matrix.html#a8fac70c169861e59eb10344ce76c658b',1,'LinAlg::Matrix::data()'],['../classLinAlg_1_1Matrix.html#a87648d0251ff410637e4c2a2d9c313e9',1,'LinAlg::Matrix::data() const']]],
+  ['de_5fcore',['de_core',['../namespaceMBPT.html#a82ef8ec83d5802088bbb447c5abb8a70',1,'MBPT']]],
+  ['de_5fvalence',['de_valence',['../namespaceMBPT.html#ad92e4f841daa4b234c0b7bffd2b00a4b',1,'MBPT']]],
   ['defaulta',['defaultA',['../namespaceAtomData.html#a9d7597f51fdb456b1097639dde66aaf0',1,'AtomData']]],
   ['defaultgreen',['defaultGreen',['../namespaceParametric.html#a20f3c8eb7f8341fdc21f8fd49f31377c',1,'Parametric']]],
   ['defaultgreencore',['defaultGreenCore',['../namespaceParametric.html#a36c7f9148db89686d33a1830125e29c0',1,'Parametric']]],
   ['defaulttietz',['defaultTietz',['../namespaceParametric.html#a02d0f6a92ac03b04d1f149642c65f9cf',1,'Parametric']]],
   ['derivitate',['derivitate',['../classBSplines.html#a295f996feb9574cd9c50f634ff4e275f',1,'BSplines']]],
-  ['determinant',['determinant',['../classLinAlg_1_1SqMatrix.html#a4a8a7c09c10df60851cdb0940705e1bf',1,'LinAlg::SqMatrix']]],
+  ['determinant',['determinant',['../classLinAlg_1_1Matrix.html#ac37c6de5c7657281d0a65b659a717ef2',1,'LinAlg::Matrix']]],
   ['diagramrpa',['DiagramRPA',['../classExternalField_1_1DiagramRPA.html',1,'ExternalField::DiagramRPA'],['../classExternalField_1_1DiagramRPA.html#a77d5aae71ff55d20bc0cb779a745feaa',1,'ExternalField::DiagramRPA::DiagramRPA(const DiracOperator::TensorOperator *const h, const std::vector&lt; DiracSpinor &gt; &amp;basis, const std::vector&lt; DiracSpinor &gt; &amp;core, const std::string &amp;atom=&quot;Atom&quot;)'],['../classExternalField_1_1DiagramRPA.html#ad16799e16049d6b0e182e264dbeab297',1,'ExternalField::DiagramRPA::DiagramRPA(const DiracOperator::TensorOperator *const h, const DiagramRPA *const drpa)']]],
   ['diracen',['diracen',['../namespaceAtomData.html#aff1f33fe350a0d43c1483b01daffbf3d',1,'AtomData']]],
   ['dirachydrogen',['DiracHydrogen',['../namespaceDiracHydrogen.html',1,'']]],

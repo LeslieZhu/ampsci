@@ -92,14 +92,6 @@ template&lt;typename T &gt; </td></tr>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a6b60cce1c14063eaa0fb07f3fb7d17dd"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>check</b> (std::ostream *ostr, const std::string_view &amp;name, const T value, const T expected)</td></tr>
 <tr class="separator:a6b60cce1c14063eaa0fb07f3fb7d17dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95825e5328321b8e0f83c230a42bd384"><td class="memItemLeft" align="right" valign="top"><a id="a95825e5328321b8e0f83c230a42bd384"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a95825e5328321b8e0f83c230a42bd384">fstring</a> (const std::string format,...)</td></tr>
-<tr class="memdesc:a95825e5328321b8e0f83c230a42bd384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted std::string, with formatting printf-like commands. Note: maximum string lenth is 80 characters. If longer string required, use provided overload. <br /></td></tr>
-<tr class="separator:a95825e5328321b8e0f83c230a42bd384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97f77c0373bce44b37d7e26af0f03de4"><td class="memItemLeft" align="right" valign="top"><a id="a97f77c0373bce44b37d7e26af0f03de4"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a97f77c0373bce44b37d7e26af0f03de4">fstring</a> (const std::size_t size, const std::string format,...)</td></tr>
-<tr class="memdesc:a97f77c0373bce44b37d7e26af0f03de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload: size is maximum string length (buffer size). <br /></td></tr>
-<tr class="separator:a97f77c0373bce44b37d7e26af0f03de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80b99af2e2e2a1d9438a995c2555f51e"><td class="memTemplParams" colspan="2"><a id="a80b99af2e2e2a1d9438a995c2555f51e"></a>
 template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a80b99af2e2e2a1d9438a995c2555f51e"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>max_abs</b> (T first, Args... rest)</td></tr>
@@ -149,10 +141,30 @@ template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa01f49ba28d675214823baeb8c9dff37"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; Real, Real &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceqip.html#aa01f49ba28d675214823baeb8c9dff37">Newtons</a> (Function f, Real x, Real dx=Real{0.01}, Real delta_target=Real{1.0e-6}, unsigned it_limit=50)</td></tr>
 <tr class="memdesc:aa01f49ba28d675214823baeb8c9dff37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve f(x) = 0 for x using Newtons method.  <a href="#aa01f49ba28d675214823baeb8c9dff37">More...</a><br /></td></tr>
 <tr class="separator:aa01f49ba28d675214823baeb8c9dff37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95825e5328321b8e0f83c230a42bd384"><td class="memItemLeft" align="right" valign="top"><a id="a95825e5328321b8e0f83c230a42bd384"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a95825e5328321b8e0f83c230a42bd384">fstring</a> (const std::string format,...)</td></tr>
+<tr class="memdesc:a95825e5328321b8e0f83c230a42bd384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a formatted std::string, with formatting printf-like commands. Note: maximum string lenth is 256 characters. If longer string required, use provided overload. <br /></td></tr>
+<tr class="separator:a95825e5328321b8e0f83c230a42bd384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97f77c0373bce44b37d7e26af0f03de4"><td class="memItemLeft" align="right" valign="top"><a id="a97f77c0373bce44b37d7e26af0f03de4"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a97f77c0373bce44b37d7e26af0f03de4">fstring</a> (const std::size_t size, const std::string format,...)</td></tr>
+<tr class="memdesc:a97f77c0373bce44b37d7e26af0f03de4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overload: size is maximum string length (buffer size). <br /></td></tr>
+<tr class="separator:a97f77c0373bce44b37d7e26af0f03de4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6b3539250c3e8aec56e34d8588fb15"><td class="memItemLeft" align="right" valign="top"><a id="aae6b3539250c3e8aec56e34d8588fb15"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#aae6b3539250c3e8aec56e34d8588fb15">wildcard_compare</a> (std::string_view s1, std::string_view s2)</td></tr>
 <tr class="memdesc:aae6b3539250c3e8aec56e34d8588fb15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two strings, s1 and s2. s2 may contain ONE wildcard ('*') which will match anything. <br /></td></tr>
 <tr class="separator:aae6b3539250c3e8aec56e34d8588fb15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec0c485769c3134b6746de97235628d7"><td class="memItemLeft" align="right" valign="top"><a id="aec0c485769c3134b6746de97235628d7"></a>
+char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#aec0c485769c3134b6746de97235628d7">tolower</a> (char ch)</td></tr>
+<tr class="memdesc:aec0c485769c3134b6746de97235628d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">return static_cast&lt;char&gt;(std::tolower(static_cast&lt;unsigned char&gt;(ch))); <br /></td></tr>
+<tr class="separator:aec0c485769c3134b6746de97235628d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964aa73cc730e146911083bbf6828a41"><td class="memItemLeft" align="right" valign="top"><a id="a964aa73cc730e146911083bbf6828a41"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a964aa73cc730e146911083bbf6828a41">ci_compare</a> (std::string_view s1, std::string_view s2)</td></tr>
+<tr class="memdesc:a964aa73cc730e146911083bbf6828a41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Case insensitive string compare. Essentially: LowerCase(s1)==LowerCase(s2) <br /></td></tr>
+<tr class="separator:a964aa73cc730e146911083bbf6828a41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad61c9a38a409c0288937896e6666f99d"><td class="memItemLeft" align="right" valign="top"><a id="ad61c9a38a409c0288937896e6666f99d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceqip.html#ad61c9a38a409c0288937896e6666f99d">ci_wildcard_compare</a> (std::string_view s1, std::string_view s2)</td></tr>
+<tr class="memdesc:ad61c9a38a409c0288937896e6666f99d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two strings, s1 and s2. s2 may contain ONE wildcard ('*') which will match anything. Case Insensitive version. <br /></td></tr>
+<tr class="separator:ad61c9a38a409c0288937896e6666f99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca2feca8ceeedd078122dc9bac30a7d6"><td class="memTemplParams" colspan="2"><a id="aca2feca8ceeedd078122dc9bac30a7d6"></a>
 template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aca2feca8ceeedd078122dc9bac30a7d6"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceqip.html#aca2feca8ceeedd078122dc9bac30a7d6">compare</a> (const std::vector&lt; T &gt; &amp;first, const std::vector&lt; T &gt; &amp;second)</td></tr>
@@ -218,6 +230,11 @@ template&lt;typename T , typename N &gt; </td></tr>
 <tr class="memitem:ae40451d413829b19aab5a69909f69ade"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceqip.html#ae40451d413829b19aab5a69909f69ade">logarithmic_range</a> (T first, T last, N number)</td></tr>
 <tr class="memdesc:ae40451d413829b19aab5a69909f69ade"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a logarithmicly*(see below) distributed range of values between [first,last] with number steps. number must be at least 2. first+last are guarenteed to be the first and last points in the range. For integral T, range will not be perfectly logarithmic, due to [first, ..., last] guarentee and rounding; also in this case same value may appear more than once if too-many steps are requested. <br /></td></tr>
 <tr class="separator:ae40451d413829b19aab5a69909f69ade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78acb5d0ed70eead7db3ae450244a494"><td class="memTemplParams" colspan="2"><a id="a78acb5d0ed70eead7db3ae450244a494"></a>
+template&lt;typename T , typename N &gt; </td></tr>
+<tr class="memitem:a78acb5d0ed70eead7db3ae450244a494"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a78acb5d0ed70eead7db3ae450244a494">loglinear_range</a> (T first, T last, T b, N number)</td></tr>
+<tr class="memdesc:a78acb5d0ed70eead7db3ae450244a494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a Log-Linear distributed range of values between [first,last] with number steps. number must be at least 3. first+last are guarenteed to be the first and last points in the range. T must be floating point. Range is roughly logarithmic for values below 'b', and linear for values above b. Not tested for negative values. <br /></td></tr>
+<tr class="separator:a78acb5d0ed70eead7db3ae450244a494"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09964aedde8dc411a1a358e6fe92cd73"><td class="memTemplParams" colspan="2"><a id="a09964aedde8dc411a1a358e6fe92cd73"></a>
 template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a09964aedde8dc411a1a358e6fe92cd73"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceqip.html#a09964aedde8dc411a1a358e6fe92cd73">multiply_at</a> (std::size_t i, const T &amp;first, const Args &amp;... rest)</td></tr>
@@ -236,6 +253,9 @@ template&lt;typename T , typename... Args&gt; </td></tr>
 template&lt;typename F , typename T &gt; </td></tr>
 <tr class="memitem:a625393770774da4553b27cbb967cf9c9"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><b>apply_to</b> (const F &amp;func, T list)</td></tr>
 <tr class="separator:a625393770774da4553b27cbb967cf9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2628db4b1490c94df434d06b079d40"><td class="memItemLeft" align="right" valign="top"><a id="a1c2628db4b1490c94df434d06b079d40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>progbar</b> (int i, int max, int length=50)</td></tr>
+<tr class="separator:a1c2628db4b1490c94df434d06b079d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>

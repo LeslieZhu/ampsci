@@ -66,113 +66,53 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Defines <a class="el" href="classLinAlg_1_1SqMatrix.html" title="Basic Square matrix class of constant construct-time size. ">SqMatrix</a>, <a class="el" href="classLinAlg_1_1Vector.html" title="Basic vector class of constant construct-time size. ">Vector</a>, and linear-algebra solvers (incl Eigensystems)  
+<p>Defines <a class="el" href="classLinAlg_1_1Matrix.html" title="Matrix class. ">Matrix</a>, <a class="el" href="classLinAlg_1_1Vector.html" title="Vector class (inherits from Matrix) ">Vector</a> classes, and linear some algebra functions.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinAlg_1_1ComplexSqMatrix.html">ComplexSqMatrix</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Complex Square matrix class of constant construct-time size.  <a href="classLinAlg_1_1ComplexSqMatrix.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic Square matrix class of constant construct-time size.  <a href="classLinAlg_1_1SqMatrix.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLinAlg_1_1Matrix.html" title="Matrix class. ">Matrix</a> class.  <a href="classLinAlg_1_1Matrix.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLinAlg_1_1Vector.html">Vector</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic vector class of constant construct-time size.  <a href="classLinAlg_1_1Vector.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classLinAlg_1_1Vector.html" title="Vector class (inherits from Matrix) ">Vector</a> class (inherits from <a class="el" href="classLinAlg_1_1Matrix.html" title="Matrix class. ">Matrix</a>)  <a href="classLinAlg_1_1Vector.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a905fb678639a6261aff496c9f405433a"><td class="memTemplParams" colspan="2"><a id="a905fb678639a6261aff496c9f405433a"></a>
-template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a905fb678639a6261aff496c9f405433a"><td class="memTemplItemLeft" align="right" valign="top">gsl_complex&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a905fb678639a6261aff496c9f405433a">gsl_mult_few</a> (const gsl_complex &amp;first, const Args &amp;... args)</td></tr>
-<tr class="memdesc:a905fb678639a6261aff496c9f405433a"><td class="mdescLeft">&#160;</td><td class="mdescRight">To efficiently multiply many gsl_complex doubles. <br /></td></tr>
-<tr class="separator:a905fb678639a6261aff496c9f405433a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d060b98635e626f9a27d463385f416"><td class="memItemLeft" align="right" valign="top"><a id="a68d060b98635e626f9a27d463385f416"></a>
-<a class="el" href="classLinAlg_1_1Vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a68d060b98635e626f9a27d463385f416">solve_Axeqb</a> (const <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> &amp;Am, const <a class="el" href="classLinAlg_1_1Vector.html">Vector</a> &amp;b)</td></tr>
-<tr class="memdesc:a68d060b98635e626f9a27d463385f416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Matrix equationL A*x = b for x. <br /></td></tr>
-<tr class="separator:a68d060b98635e626f9a27d463385f416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dcb7c68dcf63d37882ed718ec3ffb12"><td class="memItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a0dcb7c68dcf63d37882ed718ec3ffb12">realSymmetricEigensystem</a> (<a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *A, bool sort=true)</td></tr>
-<tr class="memdesc:a0dcb7c68dcf63d37882ed718ec3ffb12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Av = ev for eigenvalues e and eigenvectors v for Real Symmetric Matrices.  <a href="#a0dcb7c68dcf63d37882ed718ec3ffb12">More...</a><br /></td></tr>
-<tr class="separator:a0dcb7c68dcf63d37882ed718ec3ffb12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace9fa2acb488c687baca65422327acb3"><td class="memItemLeft" align="right" valign="top"><a id="ace9fa2acb488c687baca65422327acb3"></a>
-std::pair&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#ace9fa2acb488c687baca65422327acb3">realSymmetricEigensystem</a> (<a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *A, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *B, bool sort=true)</td></tr>
-<tr class="memdesc:ace9fa2acb488c687baca65422327acb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Av = eBv for eigenvalues e and eigenvectors v for Real Generalized Symmetric-Definite Eigensystems. <br /></td></tr>
-<tr class="separator:ace9fa2acb488c687baca65422327acb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aea49e2cd039985c6164be46e6ffb1d"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a0aea49e2cd039985c6164be46e6ffb1d">realNonSymmetricEigensystem</a> (<a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *A, bool sort=true)</td></tr>
-<tr class="memdesc:a0aea49e2cd039985c6164be46e6ffb1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">for Av = ev for Real Nonsymmetric Matrices.  <a href="#a0aea49e2cd039985c6164be46e6ffb1d">More...</a><br /></td></tr>
-<tr class="separator:a0aea49e2cd039985c6164be46e6ffb1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c6263e61943016b09b6f534e736cf3a"><td class="memItemLeft" align="right" valign="top"><a id="a7c6263e61943016b09b6f534e736cf3a"></a>
-std::tuple&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a7c6263e61943016b09b6f534e736cf3a">realNonSymmetricEigensystem</a> (<a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *A, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *B, bool sort=true)</td></tr>
-<tr class="memdesc:a7c6263e61943016b09b6f534e736cf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Av = eBv for eigenvalues e and eigenvectors v for Real Generalized Non-Symmetric-Definite Eigensystems. <br /></td></tr>
-<tr class="separator:a7c6263e61943016b09b6f534e736cf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79a4787544be3451721ef641c4501d7a"><td class="memTemplParams" colspan="2"><a id="a79a4787544be3451721ef641c4501d7a"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a79a4787544be3451721ef641c4501d7a"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><b>myEps</b> ()</td></tr>
+<tr class="separator:a79a4787544be3451721ef641c4501d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab97efb24c395cb0dacfa2e12a53fec12"><td class="memTemplParams" colspan="2"><a id="ab97efb24c395cb0dacfa2e12a53fec12"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ab97efb24c395cb0dacfa2e12a53fec12"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#ab97efb24c395cb0dacfa2e12a53fec12">equal</a> (const <a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; &amp;lhs, const <a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; &amp;rhs, T eps=myEps&lt; T &gt;())</td></tr>
+<tr class="memdesc:ab97efb24c395cb0dacfa2e12a53fec12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares two matrices; returns true iff all elements compare relatively to better than eps. <br /></td></tr>
+<tr class="separator:ab97efb24c395cb0dacfa2e12a53fec12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e8702db6b1de2bc3dcf613f21e6caa5"><td class="memTemplParams" colspan="2"><a id="a1e8702db6b1de2bc3dcf613f21e6caa5"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1e8702db6b1de2bc3dcf613f21e6caa5"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classLinAlg_1_1Vector.html">Vector</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a1e8702db6b1de2bc3dcf613f21e6caa5">solve_Axeqb</a> (<a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; Am, const <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>&lt; T &gt; &amp;b)</td></tr>
+<tr class="memdesc:a1e8702db6b1de2bc3dcf613f21e6caa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves matrix equation Ax=b for x, for known square matrix A and vector b. <br /></td></tr>
+<tr class="separator:a1e8702db6b1de2bc3dcf613f21e6caa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ab24be83c369a054bc2aa8b8655848b"><td class="memTemplParams" colspan="2"><a id="a4ab24be83c369a054bc2aa8b8655848b"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4ab24be83c369a054bc2aa8b8655848b"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>&lt; double &gt;, <a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a4ab24be83c369a054bc2aa8b8655848b">symmhEigensystem</a> (<a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; A, bool sort)</td></tr>
+<tr class="memdesc:a4ab24be83c369a054bc2aa8b8655848b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Av = ev for eigenvalues e and eigenvectors v of symmetric/Hermetian matrix A. Returns [e,v], where v(i,j) is the jth element of the ith eigenvector corresponding to ith eigenvalue, e(i). e is always real. <br /></td></tr>
+<tr class="separator:a4ab24be83c369a054bc2aa8b8655848b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9028ab52e5e3599d75f325c464f635a6"><td class="memTemplParams" colspan="2"><a id="a9028ab52e5e3599d75f325c464f635a6"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a9028ab52e5e3599d75f325c464f635a6"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>&lt; double &gt;, <a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#a9028ab52e5e3599d75f325c464f635a6">symmhEigensystem</a> (<a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; A, <a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; B, bool sort)</td></tr>
+<tr class="memdesc:a9028ab52e5e3599d75f325c464f635a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Av = eBv for eigenvalues e and eigenvectors v of symmetric/Hermetian matrix pair A,B. Returns [e,v], where v(i,j) is the jth element of the ith eigenvector corresponding to ith eigenvalue, e(i). e is always real. <br /></td></tr>
+<tr class="separator:a9028ab52e5e3599d75f325c464f635a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7224e78dbeb256be8889e2b19893000"><td class="memTemplParams" colspan="2"><a id="af7224e78dbeb256be8889e2b19893000"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af7224e78dbeb256be8889e2b19893000"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>&lt; std::complex&lt; double &gt; &gt;, <a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; std::complex&lt; double &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceLinAlg.html#af7224e78dbeb256be8889e2b19893000">genEigensystem</a> (<a class="el" href="classLinAlg_1_1Matrix.html">Matrix</a>&lt; T &gt; A, bool sort)</td></tr>
+<tr class="memdesc:af7224e78dbeb256be8889e2b19893000"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solves Av = ev for eigenvalues e and eigenvectors v of non-symmetric real matrix A. Returns [e,v], where v(i,j) is the jth element of the ith eigenvector corresponding to ith eigenvalue, e(i). A must be real, while e and v are complex. <br /></td></tr>
+<tr class="separator:af7224e78dbeb256be8889e2b19893000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines <a class="el" href="classLinAlg_1_1SqMatrix.html" title="Basic Square matrix class of constant construct-time size. ">SqMatrix</a>, <a class="el" href="classLinAlg_1_1Vector.html" title="Basic vector class of constant construct-time size. ">Vector</a>, and linear-algebra solvers (incl Eigensystems) </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a0aea49e2cd039985c6164be46e6ffb1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0aea49e2cd039985c6164be46e6ffb1d">&#9670;&nbsp;</a></span>realNonSymmetricEigensystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::tuple&lt;<a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a>&gt; LinAlg::realNonSymmetricEigensystem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *&#160;</td>
-          <td class="paramname"><em>A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sort</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>for Av = ev for Real Nonsymmetric Matrices. </p>
-<p>e and v are complex; returned as {real, imag} (seperate vectors/Matrix) </p>
-
-</div>
-</div>
-<a id="a0dcb7c68dcf63d37882ed718ec3ffb12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dcb7c68dcf63d37882ed718ec3ffb12">&#9670;&nbsp;</a></span>realSymmetricEigensystem()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::pair&lt;<a class="el" href="classLinAlg_1_1Vector.html">Vector</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a>&gt; LinAlg::realSymmetricEigensystem </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classLinAlg_1_1SqMatrix.html">SqMatrix</a> *&#160;</td>
-          <td class="paramname"><em>A</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>sort</em> = <code>true</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Solves Av = ev for eigenvalues e and eigenvectors v for Real Symmetric Matrices. </p>
-<p>Eigensystems: Note: A and B are destroyed! Don't use afterwards (Can't avoid this without needless copy). Optionally sorts e and v by e </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Defines <a class="el" href="classLinAlg_1_1Matrix.html" title="Matrix class. ">Matrix</a>, <a class="el" href="classLinAlg_1_1Vector.html" title="Vector class (inherits from Matrix) ">Vector</a> classes, and linear some algebra functions. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

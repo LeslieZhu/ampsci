@@ -21,3 +21,4 @@ doc/tex/*
 !*.md
 !docs/
 !docs/*
+!install-deps-linux.sh

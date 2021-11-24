@@ -59,6 +59,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">SplineBasis Namespace Reference</div>  </div>
@@ -68,26 +69,36 @@ $(function() {
 <p>Constucts of spinor/orbital basis using B-splines (DKB/Reno/Derevianko-Beloy method)  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab6bb0cc10580591b29da41b949ed86ad"><td class="memItemLeft" align="right" valign="top"><a id="ab6bb0cc10580591b29da41b949ed86ad"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>SplineType</b> { <b>Derevianko</b>, 
+<b>Johnson</b>
+ }</td></tr>
+<tr class="separator:ab6bb0cc10580591b29da41b949ed86ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ac3ffc928d9bf1f16f830c11f3f97b8e9"><td class="memItemLeft" align="right" valign="top"><a id="ac3ffc928d9bf1f16f830c11f3f97b8e9"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>parseSplineType</b> (std::string_view type)</td></tr>
+<tr class="separator:ac3ffc928d9bf1f16f830c11f3f97b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e0edf847781af2dadc99568750d8ba9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#a0e0edf847781af2dadc99568750d8ba9">form_basis</a> (const Parameters &amp;params, const <a class="el" href="classWavefunction.html">Wavefunction</a> &amp;wf, const bool correlationsQ=false)</td></tr>
 <tr class="memdesc:a0e0edf847781af2dadc99568750d8ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms + returns the basis orbitals (expanded in terms of splines)  <a href="#a0e0edf847781af2dadc99568750d8ba9">More...</a><br /></td></tr>
 <tr class="separator:a0e0edf847781af2dadc99568750d8ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad534b99b9fdb3a9fb23762ef8a1451fc"><td class="memItemLeft" align="right" valign="top"><a id="ad534b99b9fdb3a9fb23762ef8a1451fc"></a>
-std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#ad534b99b9fdb3a9fb23762ef8a1451fc">form_spline_basis</a> (const int kappa, const std::size_t n_states, const std::size_t k_spl, const double r0_spl, const double rmax_spl, std::shared_ptr&lt; const <a class="el" href="classGrid.html">Grid</a> &gt; rgrid, const double alpha)</td></tr>
-<tr class="memdesc:ad534b99b9fdb3a9fb23762ef8a1451fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms the underlying spline basis (which is not kept) <br /></td></tr>
-<tr class="separator:ad534b99b9fdb3a9fb23762ef8a1451fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73a50bee98288badee81104893028d70"><td class="memItemLeft" align="right" valign="top"><a id="a73a50bee98288badee81104893028d70"></a>
-std::pair&lt; <a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a>, <a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#a73a50bee98288badee81104893028d70">fill_Hamiltonian_matrix</a> (const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;spl_basis, const <a class="el" href="classWavefunction.html">Wavefunction</a> &amp;wf, const bool correlationsQ=false)</td></tr>
-<tr class="memdesc:a73a50bee98288badee81104893028d70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates + reyurns the Hamiltonian <img class="formulaInl" alt="$H_{ij}$" src="form_54.png"/> (and <img class="formulaInl" alt="$S_{ij}$" src="form_55.png"/>) matrices. <br /></td></tr>
-<tr class="separator:a73a50bee98288badee81104893028d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba4593586f7e3a3737b44f4554e429e"><td class="memItemLeft" align="right" valign="top"><a id="a4ba4593586f7e3a3737b44f4554e429e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add_NotreDameBoundary</b> (<a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a> *Aij, const int kappa, const double alpha)</td></tr>
-<tr class="separator:a4ba4593586f7e3a3737b44f4554e429e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af40170b0ddee9c462d83421f9b199ea7"><td class="memItemLeft" align="right" valign="top"><a id="af40170b0ddee9c462d83421f9b199ea7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#af40170b0ddee9c462d83421f9b199ea7">expand_basis_orbitals</a> (std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; *basis, std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; *basis_positron, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;spl_basis, const int kappa, const int max_n, const <a class="el" href="classLinAlg_1_1Vector.html">LinAlg::Vector</a> &amp;e_values, const <a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a> &amp;e_vectors, const <a class="el" href="classWavefunction.html">Wavefunction</a> &amp;wf)</td></tr>
-<tr class="memdesc:af40170b0ddee9c462d83421f9b199ea7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands basis orbitals in terms of spline orbitals, by diagonalising Hamiltonian. <br /></td></tr>
-<tr class="separator:af40170b0ddee9c462d83421f9b199ea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc8d06296e85b24a148f9bcb3b156c0"><td class="memItemLeft" align="right" valign="top"><a id="a6dc8d06296e85b24a148f9bcb3b156c0"></a>
+std::pair&lt; std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt;, std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#a6dc8d06296e85b24a148f9bcb3b156c0">form_spline_basis</a> (const int kappa, const std::size_t n_states, const std::size_t k_spl, const double r0_spl, const double rmax_spl, std::shared_ptr&lt; const <a class="el" href="classGrid.html">Grid</a> &gt; rgrid, const double alpha, SplineType itype=SplineType::Derevianko)</td></tr>
+<tr class="memdesc:a6dc8d06296e85b24a148f9bcb3b156c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forms the underlying spline basis (which is not kept) <br /></td></tr>
+<tr class="separator:a6dc8d06296e85b24a148f9bcb3b156c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb0e4a06cc9854fe6e961354cde5bca1"><td class="memItemLeft" align="right" valign="top"><a id="adb0e4a06cc9854fe6e961354cde5bca1"></a>
+std::pair&lt; <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt;, <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#adb0e4a06cc9854fe6e961354cde5bca1">fill_Hamiltonian_matrix</a> (const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;spl_basis, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;d_basis, const <a class="el" href="classWavefunction.html">Wavefunction</a> &amp;wf, const bool correlationsQ=false, SplineType itype=SplineType::Derevianko)</td></tr>
+<tr class="memdesc:adb0e4a06cc9854fe6e961354cde5bca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates + reyurns the Hamiltonian <img class="formulaInl" alt="$H_{ij}$" src="form_54.png"/> (and <img class="formulaInl" alt="$S_{ij}$" src="form_55.png"/>) matrices. <br /></td></tr>
+<tr class="separator:adb0e4a06cc9854fe6e961354cde5bca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a546d5061620ff6db509d5c31b918a97b"><td class="memItemLeft" align="right" valign="top"><a id="a546d5061620ff6db509d5c31b918a97b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add_NotreDameBoundary</b> (<a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt; *Aij, const int kappa, const double alpha)</td></tr>
+<tr class="separator:a546d5061620ff6db509d5c31b918a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d1bcc136e9684e0130eb502cf833d96"><td class="memItemLeft" align="right" valign="top"><a id="a1d1bcc136e9684e0130eb502cf833d96"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#a1d1bcc136e9684e0130eb502cf833d96">expand_basis_orbitals</a> (std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; *basis, std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; *basis_positron, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;spl_basis, const int kappa, const int max_n, const <a class="el" href="classLinAlg_1_1Vector.html">LinAlg::Vector</a>&lt; double &gt; &amp;e_values, const <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt; &amp;e_vectors, const <a class="el" href="classWavefunction.html">Wavefunction</a> &amp;wf)</td></tr>
+<tr class="memdesc:a1d1bcc136e9684e0130eb502cf833d96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands basis orbitals in terms of spline orbitals, by diagonalising Hamiltonian. <br /></td></tr>
+<tr class="separator:a1d1bcc136e9684e0130eb502cf833d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28a7e2dad3dfdac5aad683445b9c95b7"><td class="memItemLeft" align="right" valign="top"><a id="a28a7e2dad3dfdac5aad683445b9c95b7"></a>
 std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceSplineBasis.html#a28a7e2dad3dfdac5aad683445b9c95b7">sumrule_TKR</a> (const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;basis, const std::vector&lt; double &gt; &amp;r, bool print=false)</td></tr>
 <tr class="memdesc:a28a7e2dad3dfdac5aad683445b9c95b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">TKR sum rule (basis test); should =0 (must include -ve energy states) <br /></td></tr>
@@ -102,9 +113,7 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Constucts of spinor/orbital basis using B-splines (DKB/Reno/Derevianko-Beloy method) </p>
-<p>Uses Maths/Bsplines to forma set of B-spline orbitals (using method from [1]). Diagonalises B-splines over Hamiltonian to produce a set of basis orbitals.</p><ul>
-<li>[1] K. Beloy and A. Derevianko, Comput. Phys. Commun. 179, 310 (2008).</li>
-</ul>
+<p>Uses Maths/Bsplines to forma set of B-spline orbitals (using method from [1] "Derevianko", or [2] "Johnson"). Diagonalises B-splines over Hamiltonian to produce a set of basis orbitals. [1] K. Beloy, A. Derevianko, Comput. Phys. Commun. 179, 310 (2008). [2] W. Johnson, S. Blundell, J. Sapirstein, Phys. Rev. A 37, 307 (1988). See also: Bachau et al., Reports Prog. Phys. 64, 1815 (2001).</p>
 <p>If <img class="formulaInl" alt="$\{|i\rangle\}$" src="form_47.png"/> are the set of <img class="formulaInl" alt="$2N$" src="form_48.png"/> DKB spline orbitals (of a given angular symmetry), and </p><p class="formulaDsp">
 <img class="formulaDsp" alt="\[ H_{ij} = \langle{S_i}|\hat H_{\rm HF}|{S_j}\rangle \, , \qquad S_{ij} = \langle{S_i|S_j}\rangle. \]" src="form_49.png"/>
 </p>
@@ -153,8 +162,8 @@ std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bot
 <li>states_str = which states to keep e.g., "25spd10f" (up to n=25 for s,p,d-states, and up to n=10 for f states)</li>
 <li>n_spl: Number of splines (nb: underlying spline set is larger, see [1])</li>
 <li>k_spl: k order of the B-splines. NB: must have <img class="formulaInl" alt="$k\geq l_{\rm max}+3$" src="form_53.png"/> [1]</li>
-<li>r0_spl: first internal knot (basis orbitals only non-zero after this point)</li>
-<li>r0_eps: Only calculate splines for r where relative core density larger than r0_eps (updates r0 for each l). Typically ~1.0e-8. Set to zero to use r0_spl.</li>
+<li>r0_spl: first internal knot</li>
+<li>r0_eps: sets r0_spl as r where relative core density larger than r0_eps (updates r0 for each l). Typically ~1.0e-8. Set to zero to use r0_spl.</li>
 <li>rmax_spl: last internal knot (basis orbitals only non-zero before this point)</li>
 <li>wf: <a class="el" href="classWavefunction.html" title="Stores Wavefunction (set of core+valence orbitals, grid etc.) ">Wavefunction</a> object: needed to form Hartree-Fock Hamiltonian</li>
 <li>positronQ: =true will keep negative energy states (have -ve principal quantum number, are appended to end of the basis std::vector). If false, discards them.</li>

@@ -7,7 +7,7 @@ var searchData=
   ['valence',['valence',['../classWavefunction.html#a0123a0eb76e7b6a55381bea604e74a51',1,'Wavefunction']]],
   ['vbrfa',['VbrFa',['../classHF_1_1Breit.html#ab8e3d6746f6cc9b2240ad26dbd025de6',1,'HF::Breit']]],
   ['vdir',['vdir',['../classWavefunction.html#a8ea877d1c943977e5ca769dc48281029',1,'Wavefunction']]],
-  ['vector',['Vector',['../classLinAlg_1_1Vector.html',1,'LinAlg']]],
+  ['vector',['Vector',['../classLinAlg_1_1Vector.html',1,'LinAlg::Vector&lt; T &gt;'],['../classLinAlg_1_1Vector.html#a1a338370b58ae11f521cd0db7ef532f8',1,'LinAlg::Vector::Vector(std::size_t dimension)'],['../classLinAlg_1_1Vector.html#aa3a6ee980a6c501447a0b124c1dea983',1,'LinAlg::Vector::Vector(std::initializer_list&lt; T &gt; l)'],['../classLinAlg_1_1Vector.html#a8d387cf9ebe8016e308e89d0a9d138d1',1,'LinAlg::Vector::Vector(std::vector&lt; T &gt; &amp;&amp;v)'],['../classLinAlg_1_1Vector.html#abaf29752f47c3fef17ef987759fabecc',1,'LinAlg::Vector::Vector(const std::vector&lt; T &gt; &amp;v)'],['../classLinAlg_1_1Vector.html#a85ff64688427b9a0903320ab70193191',1,'LinAlg::Vector::Vector(const Matrix&lt; T &gt; &amp;&amp;m)'],['../classLinAlg_1_1Vector.html#ad48dfbcab9527fefc4572b37ddbf2c5b',1,'LinAlg::Vector::Vector(const Matrix&lt; T &gt; &amp;m)']]],
   ['vel',['Vel',['../classQED_1_1RadPot.html#a897beb1d9ba9db2ca618437bb6943a1e',1,'QED::RadPot']]],
   ['vertex_5ffunc',['vertex_func',['../classDiracOperator_1_1VertexQED.html#a6b5a15325c0aa7d69bc4ca63438b9001',1,'DiracOperator::VertexQED']]],
   ['vertexqed',['VertexQED',['../classDiracOperator_1_1VertexQED.html',1,'DiracOperator::VertexQED'],['../namespaceModule.html#a7ec1fcdd1f4d4d5a2181f40a411195a8',1,'Module::vertexQED()']]],

@@ -99,9 +99,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a79f5b37fbc1236e56283685d03a02a0f"><td class="memItemLeft" align="right" valign="top"><a id="a79f5b37fbc1236e56283685d03a02a0f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>checkNaN</b> () const</td></tr>
 <tr class="separator:a79f5b37fbc1236e56283685d03a02a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a859a043291c0c2823f43b888a2802115"><td class="memItemLeft" align="right" valign="top"><a id="a859a043291c0c2823f43b888a2802115"></a>
-LinAlg::ComplexDouble&#160;</td><td class="memItemRight" valign="bottom"><b>ffc</b> (std::size_t i, std::size_t j) const</td></tr>
-<tr class="separator:a859a043291c0c2823f43b888a2802115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce7dbdd01a395b0b858dbee1b754ea0"><td class="memItemLeft" align="right" valign="top"><a id="afce7dbdd01a395b0b858dbee1b754ea0"></a>
+std::complex&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ffc</b> (std::size_t i, std::size_t j) const</td></tr>
+<tr class="separator:afce7dbdd01a395b0b858dbee1b754ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac536de6bf4133c20aa45c5875f56b949"><td class="memItemLeft" align="right" valign="top"><a id="ac536de6bf4133c20aa45c5875f56b949"></a>
 gsl_complex &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ffc2</b> (std::size_t i, std::size_t j) const</td></tr>
 <tr class="separator:ac536de6bf4133c20aa45c5875f56b949"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +115,9 @@ gsl_complex &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ffc2</b>
 <tr class="memitem:a7b6bf85901081d2835133e3061b1feac"><td class="memItemLeft" align="right" valign="top"><a id="a7b6bf85901081d2835133e3061b1feac"></a>
 <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (double x)</td></tr>
 <tr class="separator:a7b6bf85901081d2835133e3061b1feac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab80eea569f259eb71636d28c24e378bf"><td class="memItemLeft" align="right" valign="top"><a id="ab80eea569f259eb71636d28c24e378bf"></a>
-<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const LinAlg::ComplexDouble &amp;x)</td></tr>
-<tr class="separator:ab80eea569f259eb71636d28c24e378bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a610a852477577ef569b2411e59eb0c3b"><td class="memItemLeft" align="right" valign="top"><a id="a610a852477577ef569b2411e59eb0c3b"></a>
+<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*=</b> (const std::complex&lt; double &gt; &amp;x)</td></tr>
+<tr class="separator:a610a852477577ef569b2411e59eb0c3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a294a9cf7e760dd60db6c6dc363f453ad"><td class="memItemLeft" align="right" valign="top"><a id="a294a9cf7e760dd60db6c6dc363f453ad"></a>
 <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#a294a9cf7e760dd60db6c6dc363f453ad">operator*=</a> (const <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;b)</td></tr>
 <tr class="memdesc:a294a9cf7e760dd60db6c6dc363f453ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Matrix multplication (in place): Gij -&gt;  Gik*Bkj. <br /></td></tr>
@@ -136,18 +136,18 @@ auto&#160;</td><td class="memItemRight" valign="bottom"><b>max_el</b> () const</
 <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#a806d65fbe1ba1984d5b26544766f11fb">mult_elements_by</a> (const <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a806d65fbe1ba1984d5b26544766f11fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiply elements (in place): Gij -&gt; Gij*Bij. <br /></td></tr>
 <tr class="separator:a806d65fbe1ba1984d5b26544766f11fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb31e6e16cc268c1f41ea13b2900dc19"><td class="memItemLeft" align="right" valign="top"><a id="afb31e6e16cc268c1f41ea13b2900dc19"></a>
-<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#afb31e6e16cc268c1f41ea13b2900dc19">get_real</a> () const</td></tr>
-<tr class="memdesc:afb31e6e16cc268c1f41ea13b2900dc19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real-part of a complex <a class="el" href="classMBPT_1_1GreenMatrix.html" title="Holds Green&#39;s fn operator of form: |ket&gt;&lt;bra| [4x4 matrix of NxN matrix]. ">GreenMatrix</a> (by copy) <br /></td></tr>
-<tr class="separator:afb31e6e16cc268c1f41ea13b2900dc19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafac667c43cb1bb702406298745390eb"><td class="memItemLeft" align="right" valign="top"><a id="aafac667c43cb1bb702406298745390eb"></a>
-<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#aafac667c43cb1bb702406298745390eb">get_imaginary</a> () const</td></tr>
-<tr class="memdesc:aafac667c43cb1bb702406298745390eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the imaginary-part of a complex <a class="el" href="classMBPT_1_1GreenMatrix.html" title="Holds Green&#39;s fn operator of form: |ket&gt;&lt;bra| [4x4 matrix of NxN matrix]. ">GreenMatrix</a> (by copy) <br /></td></tr>
-<tr class="separator:aafac667c43cb1bb702406298745390eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0de2769036f32927a0a8715cbaeb732c"><td class="memItemLeft" align="right" valign="top"><a id="a0de2769036f32927a0a8715cbaeb732c"></a>
-<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1ComplexSqMatrix.html">LinAlg::ComplexSqMatrix</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#a0de2769036f32927a0a8715cbaeb732c">make_complex</a> (const LinAlg::ComplexDouble &amp;x={1.0, 0.0}) const</td></tr>
-<tr class="memdesc:a0de2769036f32927a0a8715cbaeb732c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a complex <a class="el" href="classMBPT_1_1GreenMatrix.html" title="Holds Green&#39;s fn operator of form: |ket&gt;&lt;bra| [4x4 matrix of NxN matrix]. ">GreenMatrix</a> (C) from a Real one (R), by C = x*R. <br /></td></tr>
-<tr class="separator:a0de2769036f32927a0a8715cbaeb732c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff57eae66962221ed8eee106a6d34f86"><td class="memItemLeft" align="right" valign="top"><a id="aff57eae66962221ed8eee106a6d34f86"></a>
+<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#aff57eae66962221ed8eee106a6d34f86">get_real</a> () const</td></tr>
+<tr class="memdesc:aff57eae66962221ed8eee106a6d34f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the real-part of a complex <a class="el" href="classMBPT_1_1GreenMatrix.html" title="Holds Green&#39;s fn operator of form: |ket&gt;&lt;bra| [4x4 matrix of NxN matrix]. ">GreenMatrix</a> (by copy) <br /></td></tr>
+<tr class="separator:aff57eae66962221ed8eee106a6d34f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f900faea3180242fda343d922d3ee60"><td class="memItemLeft" align="right" valign="top"><a id="a9f900faea3180242fda343d922d3ee60"></a>
+<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#a9f900faea3180242fda343d922d3ee60">get_imaginary</a> () const</td></tr>
+<tr class="memdesc:a9f900faea3180242fda343d922d3ee60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the imaginary-part of a complex <a class="el" href="classMBPT_1_1GreenMatrix.html" title="Holds Green&#39;s fn operator of form: |ket&gt;&lt;bra| [4x4 matrix of NxN matrix]. ">GreenMatrix</a> (by copy) <br /></td></tr>
+<tr class="separator:a9f900faea3180242fda343d922d3ee60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d2ad7e959baeca93025653f7291049"><td class="memItemLeft" align="right" valign="top"><a id="a20d2ad7e959baeca93025653f7291049"></a>
+<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; std::complex&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMBPT_1_1GreenMatrix.html#a20d2ad7e959baeca93025653f7291049">make_complex</a> (const std::complex&lt; double &gt; &amp;x={1.0, 0.0}) const</td></tr>
+<tr class="memdesc:a20d2ad7e959baeca93025653f7291049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a complex <a class="el" href="classMBPT_1_1GreenMatrix.html" title="Holds Green&#39;s fn operator of form: |ket&gt;&lt;bra| [4x4 matrix of NxN matrix]. ">GreenMatrix</a> (C) from a Real one (R), by C = x*R. <br /></td></tr>
+<tr class="separator:a20d2ad7e959baeca93025653f7291049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -184,9 +184,9 @@ Friends</h2></td></tr>
 <tr class="memitem:adfa2189bd209e88d82efc678f9babfda"><td class="memItemLeft" align="right" valign="top"><a id="adfa2189bd209e88d82efc678f9babfda"></a>
 <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (double x, <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; rhs)</td></tr>
 <tr class="separator:adfa2189bd209e88d82efc678f9babfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a423ce412a3d66163910379d5aca08dc7"><td class="memItemLeft" align="right" valign="top"><a id="a423ce412a3d66163910379d5aca08dc7"></a>
-auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const LinAlg::ComplexDouble &amp;x, <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; rhs)</td></tr>
-<tr class="separator:a423ce412a3d66163910379d5aca08dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77bc2a748c1e09c47c2f45dbd0906a1b"><td class="memItemLeft" align="right" valign="top"><a id="a77bc2a748c1e09c47c2f45dbd0906a1b"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const std::complex&lt; double &gt; &amp;x, <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; rhs)</td></tr>
+<tr class="separator:a77bc2a748c1e09c47c2f45dbd0906a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74464253b57c2313d9e1673155c5bdda"><td class="memItemLeft" align="right" valign="top"><a id="a74464253b57c2313d9e1673155c5bdda"></a>
 <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (<a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; lhs, const <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; T &gt; &amp;rhs)</td></tr>
 <tr class="separator:a74464253b57c2313d9e1673155c5bdda"><td class="memSeparator" colspan="2">&#160;</td></tr>

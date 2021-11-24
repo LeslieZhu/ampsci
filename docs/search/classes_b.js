@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['qktable',['QkTable',['../classCoulomb_1_1QkTable.html',1,'Coulomb']]]
+  ['parameters',['Parameters',['../structNuclear_1_1Parameters.html',1,'Nuclear']]],
+  ['pncnsi',['PNCnsi',['../classDiracOperator_1_1PNCnsi.html',1,'DiracOperator']]]
 ];

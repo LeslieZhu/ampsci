@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#a2b078ca2c38302405920fcaa8f0cdc2c">add</a> (<a class="el" href="classIO_1_1InputBlock.html">InputBlock</a> block, bool merge=false)</td></tr>
 <tr class="memdesc:a2b078ca2c38302405920fcaa8f0cdc2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new <a class="el" href="classIO_1_1InputBlock.html" title="Holds list of Options, and a list of other InputBlocks. Can be initialised with a list of options...">InputBlock</a> (merge: will be merged with existing if names match) <br /></td></tr>
 <tr class="separator:a2b078ca2c38302405920fcaa8f0cdc2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae99d911bb38d584c753cea739a0acec0"><td class="memItemLeft" align="right" valign="top"><a id="ae99d911bb38d584c753cea739a0acec0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>merge</b> (<a class="el" href="classIO_1_1InputBlock.html">InputBlock</a> block)</td></tr>
+<tr class="separator:ae99d911bb38d584c753cea739a0acec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac41391c0b1808726b5d9d9d0747f311e"><td class="memItemLeft" align="right" valign="top"><a id="ac41391c0b1808726b5d9d9d0747f311e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#ac41391c0b1808726b5d9d9d0747f311e">add</a> (<a class="el" href="structIO_1_1Option.html">Option</a> option)</td></tr>
 <tr class="memdesc:ac41391c0b1808726b5d9d9d0747f311e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new option to end of list. <br /></td></tr>
@@ -109,6 +112,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const std::v
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#ae322bbceda5398a1e426076d40208193">add</a> (const std::string &amp;string, bool merge=false)</td></tr>
 <tr class="memdesc:ae322bbceda5398a1e426076d40208193"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds options/inputBlocks by parsing a string. <br /></td></tr>
 <tr class="separator:ae322bbceda5398a1e426076d40208193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60f5f45309e6012873b23d3938837374"><td class="memItemLeft" align="right" valign="top"><a id="a60f5f45309e6012873b23d3938837374"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>merge</b> (const std::string &amp;string)</td></tr>
+<tr class="separator:a60f5f45309e6012873b23d3938837374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5b81e0d9e29266fc9e1142d380fd97"><td class="memItemLeft" align="right" valign="top"><a id="a6a5b81e0d9e29266fc9e1142d380fd97"></a>
 std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const</td></tr>
 <tr class="separator:a6a5b81e0d9e29266fc9e1142d380fd97"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,23 +161,16 @@ std::optional&lt; <a class="el" href="structIO_1_1Option.html">Option</a> &gt;&#
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a> (std::ostream &amp;os=std::cout, int indent_depth=0) const</td></tr>
 <tr class="memdesc:a4895efb94aa3787559eba4f0daefbffd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints options to screen in user-friendly form. Same form as input string. By default prints to cout, but can be given any ostream. <br /></td></tr>
 <tr class="separator:a4895efb94aa3787559eba4f0daefbffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d5dcb9b98a133001bcfb3351b68b8e9"><td class="memItemLeft" align="right" valign="top"><a id="a8d5dcb9b98a133001bcfb3351b68b8e9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#a8d5dcb9b98a133001bcfb3351b68b8e9">checkBlock2</a> (const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
-<tr class="memdesc:a8d5dcb9b98a133001bcfb3351b68b8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check all the options and blocks in this; if any of them are not present in 'list', then there is likely a spelling error in the input =&gt; returns false, warns user, and prints all options to screen. list is a pair: {option, description}. Description allws you to explain what each option is - great for 'self-documenting' code If print=true - will print all options+descriptions even if all good. <br /></td></tr>
-<tr class="separator:a8d5dcb9b98a133001bcfb3351b68b8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a638471e7b1b8f2efc8e3bca2a7b9598b"><td class="memItemLeft" align="right" valign="top"><a id="a638471e7b1b8f2efc8e3bca2a7b9598b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkBlock</b> (const std::vector&lt; std::string &gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
-<tr class="separator:a638471e7b1b8f2efc8e3bca2a7b9598b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09b6233c7c423285c515effbef48b74e"><td class="memItemLeft" align="right" valign="top"><a id="a09b6233c7c423285c515effbef48b74e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#a09b6233c7c423285c515effbef48b74e">check2</a> (std::initializer_list&lt; std::string &gt; <a class="el" href="classIO_1_1InputBlock.html#a46bc9ace07142560cedf55e367bf029d">blocks</a>, const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
-<tr class="memdesc:a09b6233c7c423285c515effbef48b74e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check one of the sub-blocks. <br /></td></tr>
-<tr class="separator:a09b6233c7c423285c515effbef48b74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28bfb1ecda3d4a207ed086bee6ca80ea"><td class="memItemLeft" align="right" valign="top"><a id="a28bfb1ecda3d4a207ed086bee6ca80ea"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>check2</b> (const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
-<tr class="separator:a28bfb1ecda3d4a207ed086bee6ca80ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1fdb4c381b982e16bd817ff9779ddca"><td class="memItemLeft" align="right" valign="top"><a id="ab1fdb4c381b982e16bd817ff9779ddca"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>check</b> (std::initializer_list&lt; std::string &gt; <a class="el" href="classIO_1_1InputBlock.html#a46bc9ace07142560cedf55e367bf029d">blocks</a>, const std::vector&lt; std::string &gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
-<tr class="separator:ab1fdb4c381b982e16bd817ff9779ddca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac081a2bbbba4b0d4f21f625a77315610"><td class="memItemLeft" align="right" valign="top"><a id="ac081a2bbbba4b0d4f21f625a77315610"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>checkBlock_old</b> (const std::vector&lt; std::string &gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
+<tr class="separator:ac081a2bbbba4b0d4f21f625a77315610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35624d1d3f1d9f285e190d664be957dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#a35624d1d3f1d9f285e190d664be957dd">check</a> (std::initializer_list&lt; std::string &gt; <a class="el" href="classIO_1_1InputBlock.html#a46bc9ace07142560cedf55e367bf029d">blocks</a>, const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
+<tr class="memdesc:a35624d1d3f1d9f285e190d664be957dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check all the options and blocks in this; if any of them are not present in 'list', then there is likely a spelling error in the input =&gt; returns false, warns user, and prints all options to screen. list is a pair: {option, description}. Description allws you to explain what each option is - great for 'self-documenting' code If print=true - will print all options+descriptions even if all good.  <a href="#a35624d1d3f1d9f285e190d664be957dd">More...</a><br /></td></tr>
+<tr class="separator:a35624d1d3f1d9f285e190d664be957dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fdfd0aadd4df6272f973d285a82745f"><td class="memItemLeft" align="right" valign="top"><a id="a4fdfd0aadd4df6272f973d285a82745f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIO_1_1InputBlock.html#a4fdfd0aadd4df6272f973d285a82745f">check</a> (const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;list, bool <a class="el" href="classIO_1_1InputBlock.html#a4895efb94aa3787559eba4f0daefbffd">print</a>=false) const</td></tr>
+<tr class="memdesc:a4fdfd0aadd4df6272f973d285a82745f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override for when condidering current block. <br /></td></tr>
+<tr class="separator:a4fdfd0aadd4df6272f973d285a82745f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
@@ -191,8 +190,55 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (std::
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds list of Options, and a list of other InputBlocks. Can be initialised with a list of options, with a string, or from a file (ifstream). Format for input is, e.g.,: </p>
-<p>BlockName1{ option1=value1; option2=value2; InnerBlock{ option1=v3; } } </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>BlockName1{ option1=value1; option2=value2; InnerBlock{ option1=v3; } }</p>
+<p>Note: comparison for block/option names is case insensitive! </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a35624d1d3f1d9f285e190d664be957dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35624d1d3f1d9f285e190d664be957dd">&#9670;&nbsp;</a></span>check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool IO::InputBlock::check </td>
+          <td>(</td>
+          <td class="paramtype">std::initializer_list&lt; std::string &gt;&#160;</td>
+          <td class="paramname"><em>blocks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; std::pair&lt; std::string, std::string &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>print</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check all the options and blocks in this; if any of them are not present in 'list', then there is likely a spelling error in the input =&gt; returns false, warns user, and prints all options to screen. list is a pair: {option, description}. Description allws you to explain what each option is - great for 'self-documenting' code If print=true - will print all options+descriptions even if all good. </p>
+<p>Check one of the sub-blocks. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>IO/<a class="el" href="InputBlock_8hpp_source.html">InputBlock.hpp</a></li>
 </ul>
 </div><!-- contents -->

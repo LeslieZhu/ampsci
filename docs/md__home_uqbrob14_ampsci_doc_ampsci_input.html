@@ -66,7 +66,7 @@ $(function() {
 <ul>
 <li>The <b>ampsci</b> program should be run as:<ul>
 <li>_./ampsci inputFile.in_</li>
-<li>"inputFile.in" is a plain-text input file, that contains all input options (if no input file is given, program looks for the default one, named "ampsci.in")</li>
+<li>"inputFile.in" is a plain-text input file, that contains all input options * If no input file is given, program looks for the default one, named "ampsci.in"</li>
 </ul>
 </li>
 <li>Can also be run simply by giving an atomic symbol (or Z) as command-line option, which will run a simple Hartree-Fock calculation, e.g.,: _./ampsci Cs_</li>
@@ -101,7 +101,9 @@ $(function() {
 </ul>
 <p>blockname { help; }</p>
 <hr/>
- <h1>Each input block:</h1>
+<p> All available ampsci options/blocks are:</p>
+<div class="fragment"><div class="line">ampsci{</div><div class="line">  Atom;  <span class="comment">// Which atom to run for</span></div><div class="line">  <a class="code" href="classGrid.html">Grid</a>;  <span class="comment">// Set radial grid parameters</span></div><div class="line">  HartreeFock;  <span class="comment">// Expl</span></div><div class="line">  Nucleus;  <span class="comment">// Set nuclear parameters</span></div><div class="line">  RadPot;  <span class="comment">// Inlcude QED radiative potential</span></div><div class="line">  Basis;  <span class="comment">// Basis used for MBPT</span></div><div class="line">  Spectrum;  <span class="comment">// Like basis; used for sum-over-states</span></div><div class="line">  Correlations;  <span class="comment">// Options for correlations</span></div><div class="line">  ExtraPotential;  <span class="comment">// Include an extra potential</span></div><div class="line">  dVpol;  <span class="comment">// Approximate correlation (polarisation) potential</span></div><div class="line">  <a class="code" href="namespaceModule.html">Module</a>::*;  <span class="comment">// Run any number of modules (* -&gt; module name)</span></div><div class="line">}</div></div><!-- fragment --><hr/>
+ <h1>Some details for each input block:</h1>
 <h2>Atom</h2>
 <div class="fragment"><div class="line">Atom {</div><div class="line">  Z = Cs;    <span class="comment">//[t/i] required</span></div><div class="line">  <a class="code" href="namespaceFGRP_1_1Fit.html#ae69d8fcc58a4bfa39180b565db2c129f">A</a>;         <span class="comment">//[i] Will look-up default value if default</span></div><div class="line">  varAlpha2; <span class="comment">//[r] default = 1</span></div><div class="line">}</div></div><!-- fragment --><ul>
 <li>Z: Which atom. Can enter as symbol (e.g., Z = Cs;) or integer (e.g., Z = 55;). Required (no default)</li>

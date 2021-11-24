@@ -2,19 +2,21 @@ var searchData=
 [
   ['g',['g',['../classDiracSpinor.html#a4ce97d74dfb540eb7b9de689913d6e98',1,'DiracSpinor::g()'],['../namespaceDiracHydrogen.html#a3e3267d72945ad9318c3b5f2a731cf31',1,'DiracHydrogen::g()']]],
   ['gamma',['gamma',['../namespaceDiracHydrogen.html#a1ccc530552528b5b3be43d03c3e8bbb4',1,'DiracHydrogen']]],
+  ['geneigensystem',['genEigensystem',['../namespaceLinAlg.html#af7224e78dbeb256be8889e2b19893000',1,'LinAlg']]],
   ['generateoperator',['generateOperator',['../namespaceModule.html#ab33e7fa02b578cebc668924ceac36fb5',1,'Module::generateOperator(const IO::InputBlock &amp;input, const Wavefunction &amp;wf, bool print=true)'],['../namespaceModule.html#a536b065c71a6b3c8195819636f02b19a',1,'Module::generateOperator(std::string_view oper_name, const IO::InputBlock &amp;input, const Wavefunction &amp;wf, bool print)']]],
-  ['get',['get',['../classAngular_1_1SixJTable.html#a9fb1d4ee1102bf1b708cbd14e23e93ed',1,'Angular::SixJTable::get()'],['../classCoulomb_1_1YkTable.html#a3aaebf1345bd687ca80e65824bbb6de7',1,'Coulomb::YkTable::get()'],['../classIO_1_1InputBlock.html#aba11bf900b51b3b16e01ec22db3ce848',1,'IO::InputBlock::get(std::string_view key, T default_value) const'],['../classIO_1_1InputBlock.html#a206cb01aa56d10a8766ca00766f192a1',1,'IO::InputBlock::get(std::string_view key) const'],['../classIO_1_1InputBlock.html#a2348e55704acc51e1d24d18d9ca52d04',1,'IO::InputBlock::get(std::initializer_list&lt; std::string &gt; blocks, std::string_view key, T default_value) const'],['../classIO_1_1InputBlock.html#abd7283f86e648b26f984cb1332268223',1,'IO::InputBlock::get(std::initializer_list&lt; std::string &gt; blocks, std::string_view key) const']]],
+  ['get',['get',['../classAngular_1_1SixJTable.html#af02e3449a37e15dfb37e8d305e06d33f',1,'Angular::SixJTable::get()'],['../classCoulomb_1_1YkTable.html#a3aaebf1345bd687ca80e65824bbb6de7',1,'Coulomb::YkTable::get()'],['../classIO_1_1InputBlock.html#aba11bf900b51b3b16e01ec22db3ce848',1,'IO::InputBlock::get(std::string_view key, T default_value) const'],['../classIO_1_1InputBlock.html#a206cb01aa56d10a8766ca00766f192a1',1,'IO::InputBlock::get(std::string_view key) const'],['../classIO_1_1InputBlock.html#a2348e55704acc51e1d24d18d9ca52d04',1,'IO::InputBlock::get(std::initializer_list&lt; std::string &gt; blocks, std::string_view key, T default_value) const'],['../classIO_1_1InputBlock.html#abd7283f86e648b26f984cb1332268223',1,'IO::InputBlock::get(std::initializer_list&lt; std::string &gt; blocks, std::string_view key) const'],['../classBSpline.html#a0dd917070a099ca6541fd20466ba8840',1,'BSpline::get()']]],
+  ['get_5f2',['get_2',['../classAngular_1_1SixJTable.html#aed458d3ed7d092d46c8d2a299396b3e6',1,'Angular::SixJTable']]],
   ['get_5fckab',['get_Ckab',['../classAngular_1_1CkTable.html#a0792d811f7ebd425cb8d4219feef8626',1,'Angular::CkTable']]],
   ['get_5fckab_5fmutable',['get_Ckab_mutable',['../classAngular_1_1CkTable.html#ad069d66f1d54cbb0caf83f27ab152b11',1,'Angular::CkTable']]],
-  ['get_5fcopy',['get_copy',['../classLinAlg_1_1ComplexSqMatrix.html#ab10eadd63bee9d75d889f76e65d1e376',1,'LinAlg::ComplexSqMatrix']]],
   ['get_5fdpsi_5fx',['get_dPsi_x',['../classExternalField_1_1TDHF.html#a19d1e4f4e5af729cbb41a67890c80862',1,'ExternalField::TDHF']]],
   ['get_5fdpsis',['get_dPsis',['../classExternalField_1_1TDHF.html#a09f465025432fa55c8f6215e0d302738',1,'ExternalField::TDHF']]],
   ['get_5fends',['get_ends',['../classBSplines.html#a225c30f7294b4fd68870632a33e90b13',1,'BSplines']]],
   ['get_5feps',['get_eps',['../classExternalField_1_1CorePolarisation.html#a1be05f45b43df2a833685a06b698e4e4',1,'ExternalField::CorePolarisation']]],
-  ['get_5fimaginary',['get_imaginary',['../classMBPT_1_1GreenMatrix.html#aafac667c43cb1bb702406298745390eb',1,'MBPT::GreenMatrix']]],
+  ['get_5fimaginary',['get_imaginary',['../classMBPT_1_1GreenMatrix.html#a9f900faea3180242fda343d922d3ee60',1,'MBPT::GreenMatrix']]],
   ['get_5flambdakab',['get_Lambdakab',['../classAngular_1_1CkTable.html#a90ccd3acb18a4ea1fb5c9a68a1cc580e',1,'Angular::CkTable']]],
+  ['get_5fnonzero',['get_nonzero',['../classBSpline.html#a98b380d5a11bd7babddaee9cc7710de2',1,'BSpline']]],
   ['get_5fomega',['get_omega',['../classExternalField_1_1CorePolarisation.html#adb74e6d39580da4137d932c9df4ec969',1,'ExternalField::CorePolarisation']]],
-  ['get_5freal',['get_real',['../classMBPT_1_1GreenMatrix.html#afb31e6e16cc268c1f41ea13b2900dc19',1,'MBPT::GreenMatrix']]],
+  ['get_5freal',['get_real',['../classMBPT_1_1GreenMatrix.html#aff57eae66962221ed8eee106a6d34f86',1,'MBPT::GreenMatrix']]],
   ['get_5fspline',['get_spline',['../classBSplines.html#a4b7b81f262e0de29af9fb46a5eace3fa',1,'BSplines']]],
   ['get_5fspline_5fderiv',['get_spline_deriv',['../classBSplines.html#a46b0161387ed74c3a317e9d8cd1eb76c',1,'BSplines']]],
   ['get_5fspline_5fderiv2',['get_spline_deriv2',['../classBSplines.html#a1346a149b11b94b77f087cdd5e34d999',1,'BSplines']]],
@@ -32,6 +34,5 @@ var searchData=
   ['gk_5fab',['gk_ab',['../namespaceCoulomb.html#a77288c70c8f57138151124f139bff279',1,'Coulomb']]],
   ['grab_5ftam',['grab_tam',['../classExternalField_1_1DiagramRPA.html#afac10e3ae3df0ae6e719beb806948270',1,'ExternalField::DiagramRPA']]],
   ['grid',['Grid',['../classGrid.html#a54dbfeb6a58150b31f5d3f4f592e2543',1,'Grid::Grid(double in_r0, double in_rmax, std::size_t in_num_points, GridType in_gridtype, double in_b=0)'],['../classGrid.html#a6596b73dca8db49aa728198934e3cbea',1,'Grid::Grid(const GridParameters &amp;in)']]],
-  ['gridparameters',['GridParameters',['../structGridParameters.html#a1bd64b4e9136bed2422234fce2b64392',1,'GridParameters::GridParameters(std::size_t innum_points, double inr0, double inrmax, double inb=4.0, GridType intype=GridType::loglinear, double indu=0)'],['../structGridParameters.html#a91e6020b308e3f422f13f6cf4f13c54c',1,'GridParameters::GridParameters(std::size_t innum_points, double inr0, double inrmax, double inb=4.0, const std::string &amp;str_type=&quot;loglinear&quot;, double indu=0)'],['../classGrid.html#a7746a94c4b97345987f3939235605b42',1,'Grid::gridParameters()']]],
-  ['gsl_5fmult_5ffew',['gsl_mult_few',['../namespaceLinAlg.html#a905fb678639a6261aff496c9f405433a',1,'LinAlg']]]
+  ['gridparameters',['GridParameters',['../structGridParameters.html#a1bd64b4e9136bed2422234fce2b64392',1,'GridParameters::GridParameters(std::size_t innum_points, double inr0, double inrmax, double inb=4.0, GridType intype=GridType::loglinear, double indu=0)'],['../structGridParameters.html#a91e6020b308e3f422f13f6cf4f13c54c',1,'GridParameters::GridParameters(std::size_t innum_points, double inr0, double inrmax, double inb=4.0, const std::string &amp;str_type=&quot;loglinear&quot;, double indu=0)'],['../classGrid.html#a7746a94c4b97345987f3939235605b42',1,'Grid::gridParameters()']]]
 ];

@@ -88,15 +88,15 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:a98b4d487d86c4b8cdd0c9d1fdc9194a0"><td class="memItemLeft" align="right" valign="top"><a id="a98b4d487d86c4b8cdd0c9d1fdc9194a0"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>GMatrix</b> = <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1SqMatrix.html">LinAlg::SqMatrix</a> &gt;</td></tr>
-<tr class="separator:a98b4d487d86c4b8cdd0c9d1fdc9194a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf6da7ac68a7f9d399bd22b5443468e"><td class="memItemLeft" align="right" valign="top"><a id="adaf6da7ac68a7f9d399bd22b5443468e"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ComplexGMatrix</b> = <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1ComplexSqMatrix.html">LinAlg::ComplexSqMatrix</a> &gt;</td></tr>
-<tr class="separator:adaf6da7ac68a7f9d399bd22b5443468e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01b6ddf7a00bfb55d350ebce4389c801"><td class="memItemLeft" align="right" valign="top"><a id="a01b6ddf7a00bfb55d350ebce4389c801"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>ComplexDouble</b> = LinAlg::ComplexDouble</td></tr>
-<tr class="separator:a01b6ddf7a00bfb55d350ebce4389c801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349c0ab64af8bd81d27084b9422d2d9e"><td class="memItemLeft" align="right" valign="top"><a id="a349c0ab64af8bd81d27084b9422d2d9e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>GMatrix</b> = <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; double &gt; &gt;</td></tr>
+<tr class="separator:a349c0ab64af8bd81d27084b9422d2d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c63df076378a7cfece47d02a205fdf"><td class="memItemLeft" align="right" valign="top"><a id="a63c63df076378a7cfece47d02a205fdf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ComplexGMatrix</b> = <a class="el" href="classMBPT_1_1GreenMatrix.html">GreenMatrix</a>&lt; <a class="el" href="classLinAlg_1_1Matrix.html">LinAlg::Matrix</a>&lt; std::complex&lt; double &gt; &gt;&gt;</td></tr>
+<tr class="separator:a63c63df076378a7cfece47d02a205fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7fc763766942fa30a3b176061ea7df7"><td class="memItemLeft" align="right" valign="top"><a id="ae7fc763766942fa30a3b176061ea7df7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>ComplexDouble</b> = std::complex&lt; double &gt;</td></tr>
+<tr class="separator:ae7fc763766942fa30a3b176061ea7df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -128,10 +128,283 @@ std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnum
 <tr class="memitem:a271eaa07178ba10d1fee7fb69c349904"><td class="memItemLeft" align="right" valign="top"><a id="a271eaa07178ba10d1fee7fb69c349904"></a>
 std::string_view&#160;</td><td class="memItemRight" valign="bottom"><b>ParseEnum</b> (ExchangeMethod method)</td></tr>
 <tr class="separator:a271eaa07178ba10d1fee7fb69c349904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e571d0939ec192b0df0941a2f94f5c0"><td class="memItemLeft" align="right" valign="top"><a id="a3e571d0939ec192b0df0941a2f94f5c0"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMBPT.html#a3e571d0939ec192b0df0941a2f94f5c0">Lkmnab</a> (int k, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;m, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;n, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;a, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;b, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> &amp;qk, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;core, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;excited, const <a class="el" href="classAngular_1_1SixJTable.html">Angular::SixJTable</a> *const SJ=nullptr, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *const Lk=nullptr)</td></tr>
+<tr class="memdesc:a3e571d0939ec192b0df0941a2f94f5c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates ladder integral, L^k_mnab. <br /></td></tr>
+<tr class="separator:a3e571d0939ec192b0df0941a2f94f5c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef2f2ac7ef45de31612b2594ec72926"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMBPT.html#acef2f2ac7ef45de31612b2594ec72926">L1</a> (int k, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;m, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;n, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;a, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;b, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> &amp;qk, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;excited, const <a class="el" href="classAngular_1_1SixJTable.html">Angular::SixJTable</a> *const SJ=nullptr, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *const Lk=nullptr)</td></tr>
+<tr class="memdesc:acef2f2ac7ef45de31612b2594ec72926"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ladder integral, L^k_mnab := L1 + L23.  <a href="#acef2f2ac7ef45de31612b2594ec72926">More...</a><br /></td></tr>
+<tr class="separator:acef2f2ac7ef45de31612b2594ec72926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f40244f438ae322708b1eaa8a5429d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMBPT.html#a5f40244f438ae322708b1eaa8a5429d8">L23</a> (int k, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;m, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;n, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;a, const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;b, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> &amp;qk, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;core, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;excited, const <a class="el" href="classAngular_1_1SixJTable.html">Angular::SixJTable</a> *const SJ=nullptr, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *const Lk=nullptr)</td></tr>
+<tr class="memdesc:a5f40244f438ae322708b1eaa8a5429d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ladder integral, L^k_mnab := L1 + L23; L23 = L2 + L3.  <a href="#a5f40244f438ae322708b1eaa8a5429d8">More...</a><br /></td></tr>
+<tr class="separator:a5f40244f438ae322708b1eaa8a5429d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a615c5ad20765e625b2760e7980d16"><td class="memItemLeft" align="right" valign="top"><a id="ab3a615c5ad20765e625b2760e7980d16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceMBPT.html#ab3a615c5ad20765e625b2760e7980d16">calculate_Lk_mnib</a> (<a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *lk, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> &amp;qk, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;excited, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;core, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;i_orbs, const <a class="el" href="classAngular_1_1SixJTable.html">Angular::SixJTable</a> *const sjt=nullptr, const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *const lk_prev=nullptr, bool print_progbar=true)</td></tr>
+<tr class="memdesc:ab3a615c5ad20765e625b2760e7980d16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills Lk matrix. <br /></td></tr>
+<tr class="separator:ab3a615c5ad20765e625b2760e7980d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92e4f841daa4b234c0b7bffd2b00a4b"><td class="memTemplParams" colspan="2">template&lt;typename Qintegrals , typename QorLintegrals &gt; </td></tr>
+<tr class="memitem:ad92e4f841daa4b234c0b7bffd2b00a4b"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceMBPT.html#ad92e4f841daa4b234c0b7bffd2b00a4b">de_valence</a> (const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;v, const Qintegrals &amp;qk, const QorLintegrals &amp;lk, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;core, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;excited)</td></tr>
+<tr class="memdesc:ad92e4f841daa4b234c0b7bffd2b00a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate energy shift (either ladder, or sigma2) for valence.  <a href="#ad92e4f841daa4b234c0b7bffd2b00a4b">More...</a><br /></td></tr>
+<tr class="separator:ad92e4f841daa4b234c0b7bffd2b00a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ef8ec83d5802088bbb447c5abb8a70"><td class="memTemplParams" colspan="2">template&lt;typename Qintegrals , typename QorLintegrals &gt; </td></tr>
+<tr class="memitem:a82ef8ec83d5802088bbb447c5abb8a70"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceMBPT.html#a82ef8ec83d5802088bbb447c5abb8a70">de_core</a> (const Qintegrals &amp;qk, const QorLintegrals &amp;lk, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;core, const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;excited)</td></tr>
+<tr class="memdesc:a82ef8ec83d5802088bbb447c5abb8a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate energy shift (either ladder, or sigma2) for CORE.  <a href="#a82ef8ec83d5802088bbb447c5abb8a70">More...</a><br /></td></tr>
+<tr class="separator:a82ef8ec83d5802088bbb447c5abb8a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Many-body perturbation theory. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a82ef8ec83d5802088bbb447c5abb8a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ef8ec83d5802088bbb447c5abb8a70">&#9670;&nbsp;</a></span>de_core()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Qintegrals , typename QorLintegrals &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double MBPT::de_core </td>
+          <td>(</td>
+          <td class="paramtype">const Qintegrals &amp;&#160;</td>
+          <td class="paramname"><em>qk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QorLintegrals &amp;&#160;</td>
+          <td class="paramname"><em>lk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>core</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>excited</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate energy shift (either ladder, or sigma2) for CORE. </p>
+<p>lk may be regular <a class="el" href="namespaceCoulomb.html" title="Functions (+classes) for computing Coulomb integrals. ">Coulomb</a> integrals [in which case this returns MBPT(2) correction], or Ladder diagrams [in which case this returns the ladder diagram correction] </p>
+
+</div>
+</div>
+<a id="ad92e4f841daa4b234c0b7bffd2b00a4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92e4f841daa4b234c0b7bffd2b00a4b">&#9670;&nbsp;</a></span>de_valence()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Qintegrals , typename QorLintegrals &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">double MBPT::de_valence </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Qintegrals &amp;&#160;</td>
+          <td class="paramname"><em>qk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QorLintegrals &amp;&#160;</td>
+          <td class="paramname"><em>lk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>core</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>excited</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calculate energy shift (either ladder, or sigma2) for valence. </p>
+<p>lk may be regular <a class="el" href="namespaceCoulomb.html" title="Functions (+classes) for computing Coulomb integrals. ">Coulomb</a> integrals [in which case this returns MBPT(2) correction], or Ladder diagrams [in which case this returns the ladder diagram correction] </p>
+
+</div>
+</div>
+<a id="acef2f2ac7ef45de31612b2594ec72926"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef2f2ac7ef45de31612b2594ec72926">&#9670;&nbsp;</a></span>L1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MBPT::L1 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> &amp;&#160;</td>
+          <td class="paramname"><em>qk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>excited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAngular_1_1SixJTable.html">Angular::SixJTable</a> *const&#160;</td>
+          <td class="paramname"><em>SJ</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *const&#160;</td>
+          <td class="paramname"><em>Lk</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ladder integral, L^k_mnab := L1 + L23. </p>
+<p>L1^k_mnib = sum_{rs,ul} A^{kul}_mnrsib * Q^u_mnrs * (Q+L)^l_rsib / (e_ib - e_rs)</p>
+<p>A^{kul}_mnrsib = (-1)^{m+n+r+s+i+b+1} * [k] * {m,i,k;l,u,r} * {n,b,k;l,u,s} </p>
+
+</div>
+</div>
+<a id="a5f40244f438ae322708b1eaa8a5429d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f40244f438ae322708b1eaa8a5429d8">&#9670;&nbsp;</a></span>L23()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double MBPT::L23 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> &amp;&#160;</td>
+          <td class="paramname"><em>qk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>core</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classDiracSpinor.html">DiracSpinor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>excited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classAngular_1_1SixJTable.html">Angular::SixJTable</a> *const&#160;</td>
+          <td class="paramname"><em>SJ</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classCoulomb_1_1CoulombTable.html">Coulomb::CoulombTable</a> *const&#160;</td>
+          <td class="paramname"><em>Lk</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ladder integral, L^k_mnab := L1 + L23; L23 = L2 + L3. </p>
+<p>L2^k_mnib = sum_{rc} ((-1)^k / [k]) * P^k_cnrb * (P+Lambda)^k_mric / (e_ic - e_mr)</p>
+<p>L3^k_mnib = sum_{rc} ((-1)^k / [k]) * P^k_cmri * (P+Lambda)^k_nrbc / (e_bc - e_nr) </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

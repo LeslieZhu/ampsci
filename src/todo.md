@@ -7,6 +7,9 @@
   * Major cleanup..
   * filename: label.sig2 -> CsI_label.sig2
   * Option to use Sigma2 from Gold + rest from feyn
+    * Method = {Feynman, Goldstone, Mixed}
+    * Feynman: include scr+hp by default
+      * Calc fk if not given?
 
 ## Feynman (#22)
   * Polarisation operator instability: (#8)
@@ -25,13 +28,14 @@
   * Form addition to Cor. Pot.
   * Full SDs coupled-cluster??
 
-## B-splines (#9)
-  * Fix raw B-spline class
-  * Fix B-spline basis:
-  * Correct the r0 issue; correct number of splines
-  * Implement Johnson version
-  * Use more efficient integration?
-    * Store coefs instead of expand?
+## StrucRad + Diagram RPA
+  * Use QkTable?
+  * Store <a|h|b> and <a|dV|b> for each reqd pair?
+
+## B-spline stability (#26)
+  * Seem to be difficult to get working when including Breit.
+  * Also: sign of some basis functions wrong (not just w/ Breit)?
+  * Johnson-style splines not stable.. boundary conditions OK?
 
 ## Hartree Fock (#23)
   * Re-write class (make less inter-dependent)
@@ -74,11 +78,6 @@
   * Work with diagram RPA
   * dV conj ???
   * Different Sigma's
-
-## Continuum
-  * Fix continuum class
-  * Hartree-Fock?
-  * Use splines?
 
 ## Data format?
   * Standard data format for output/comparison?

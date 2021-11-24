@@ -192,7 +192,7 @@ bool Coulomb(std::ostream &obuff) {
               if (Angular::Ck_kk_SR(k, Fa.k, Fc.k) &&
                   Angular::Ck_kk_SR(k, Fb.k, Fd.k)) {
 
-                Q1 = Yij.Qk(k, Fa, Fb, Fc, Fd);
+                Q1 = Yij.Q(k, Fa, Fb, Fc, Fd);
                 const auto Q2 = Coulomb::Qk_abcd(Fa, Fb, Fc, Fd, k);
                 const auto Q3 = Fa * Yij.Qkv_bcd(Fa.k, Fb, Fc, Fd, k);
 
@@ -204,9 +204,10 @@ bool Coulomb(std::ostream &obuff) {
                 // test the 'Qk' version, including k_minmax_Q
                 const auto [kmin, kmax] = Coulomb::k_minmax_Q(Fa, Fb, Fc, Fd);
                 // This k_min should have correct parity rule too
-                const auto Q5 = (k >= kmin && k <= kmax && (kmin % 2 == k % 2))
-                                    ? Yij.Qk(k, Fa, Fb, Fc, Fd)
-                                    : 0.0;
+                const auto Q5 =
+                    (k >= kmin && k <= kmax && (kmin % 2 == k % 2)) ?
+                        Yij.Q(k, Fa, Fb, Fc, Fd) :
+                        0.0;
 
                 const auto delQ =
                     std::abs(qip::max_difference(Q1, Q2, Q3, Q4, Q5));
@@ -215,16 +216,14 @@ bool Coulomb(std::ostream &obuff) {
               }
 
               // Calc P
-              const auto P1 = Yij.Pk(k, Fa, Fb, Fc, Fd);
+              const auto P1 = Yij.P(k, Fa, Fb, Fc, Fd);
               const auto P2 = Coulomb::Pk_abcd(Fa, Fb, Fc, Fd, k);
               double P4 = 0.0;
               for (int l = 0; l <= Ck.max_k(); ++l) {
                 if (Angular::Ck_kk_SR(l, Fa.k, Fd.k) &&
                     Angular::Ck_kk_SR(l, Fb.k, Fc.k)) {
-                  P4 += (2 * k + 1) *
-                        sj(Fa.twoj(), Fc.twoj(), 2 * k, Fb.twoj(), Fd.twoj(),
-                           2 * l) *
-                        Yij.Qk(l, Fa, Fb, Fd, Fc);
+                  P4 += (2 * k + 1) * sj.get(Fa, Fc, k, Fb, Fd, l) *
+                        Yij.Q(l, Fa, Fb, Fd, Fc);
                 }
               }
 
@@ -232,7 +231,7 @@ bool Coulomb(std::ostream &obuff) {
               const auto [kminP, kmaxP] = Coulomb::k_minmax_P(Fa, Fb, Fc, Fd);
               // This k_min CANNOT contain correct parity rule
               const auto P5 =
-                  (k >= kminP && k <= kmaxP) ? Yij.Pk(k, Fa, Fb, Fc, Fd) : 0.0;
+                  (k >= kminP && k <= kmaxP) ? Yij.P(k, Fa, Fb, Fc, Fd) : 0.0;
 
               const auto delP = std::abs(qip::max_difference(P1, P2, P4, P5));
               if (delP > worstP)
@@ -246,7 +245,7 @@ bool Coulomb(std::ostream &obuff) {
               const auto [kmin, kmax] = Coulomb::k_minmax_W(Fa, Fb, Fc, Fd);
               // This k_min CANNOT contain correct parity rule
               const auto W5 =
-                  (k >= kmin && k <= kmax) ? Yij.Wk(k, Fa, Fb, Fc, Fd) : 0.0;
+                  (k >= kmin && k <= kmax) ? Yij.W(k, Fa, Fb, Fc, Fd) : 0.0;
 
               const auto delW = std::abs(qip::max_difference(W1, W2, W5));
               if (delW > worstW)
@@ -260,6 +259,31 @@ bool Coulomb(std::ostream &obuff) {
     pass &= qip::check_value(&obuff, "Qk_abcd ", worstQ, 0.0, 5.0e-13);
     pass &= qip::check_value(&obuff, "Pk_abcd ", worstP, 0.0, 5.0e-14);
     pass &= qip::check_value(&obuff, "Wk_abcd ", worstW, 0.0, 5.0e-14);
+
+    // Test the "Magic" 6J functions
+    {
+      double worst = 0.0;
+      for (const auto &Fa : torbs) {
+        for (const auto &Fb : torbs) {
+          for (const auto &Fc : torbs) {
+            for (const auto &Fd : torbs) {
+              for (int k = 0; k < 15; ++k) {
+                for (int l = 0; l < 15; ++l) {
+                  auto sj1 = Angular::sixj_2(Fa.twoj(), Fb.twoj(), Fc.twoj(),
+                                             Fd.twoj(), 2 * k, 2 * l);
+                  auto sj2 = Coulomb::sixjTriads(Fa, Fb, Fc, Fd, k, l) ?
+                                 Coulomb::sixj(Fa, Fb, Fc, Fd, k, l) :
+                                 0.0;
+                  if (std::abs(sj1 - sj2) > worst)
+                    worst = std::abs(sj1 - sj2);
+                }
+              }
+            }
+          }
+        }
+      }
+      pass &= qip::check_value(&obuff, "Magic 6J ", worst, 0.0, 1.0e-13);
+    }
   }
 
   return pass;

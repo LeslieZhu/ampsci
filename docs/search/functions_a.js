@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['k',['K',['../classBSpline.html#aaf19c3afb2813fb3f2c09099e4b4ec02',1,'BSpline']]],
   ['k_5findex',['k_index',['../classDiracSpinor.html#ad2bd9062c28c11998b7e0c851b68debb',1,'DiracSpinor']]],
   ['k_5fminmax',['k_minmax',['../namespaceCoulomb.html#a1298661f11542c0f1ec81aa187cbbf17',1,'Coulomb']]],
   ['k_5fminmax_5fp',['k_minmax_P',['../namespaceCoulomb.html#a5034d17268d15a99568504a76f40c70b',1,'Coulomb']]],

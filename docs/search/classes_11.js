@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['xl',['Xl',['../structQED_1_1RadPot_1_1Xl.html',1,'QED::RadPot']]]
+  ['wavefunction',['Wavefunction',['../classWavefunction.html',1,'']]],
+  ['wktable',['WkTable',['../classCoulomb_1_1WkTable.html',1,'Coulomb']]]
 ];

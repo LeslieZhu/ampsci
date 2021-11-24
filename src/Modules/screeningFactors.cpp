@@ -1,7 +1,6 @@
 #include "Coulomb/CoulombIntegrals.hpp"
 #include "IO/InputBlock.hpp"
 #include "MBPT/FeynmanSigma.hpp"
-#include "Maths/LinAlg_MatrixVector.hpp"
 #include "Maths/NumCalc_quadIntegrate.hpp"
 #include "Modules/testFeynman.hpp"
 #include "Wavefunction/DiracSpinor.hpp"
@@ -9,15 +8,13 @@
 #include <iostream>
 #include <vector>
 
-using ComplexDouble = LinAlg::ComplexDouble;
-
 namespace Module {
 
 void screeningFactors(const IO::InputBlock &input, const Wavefunction &wf) {
 
   std::cout << "\nCalculate effective screening parameters:\n";
 
-  input.checkBlock({"n_min_core"});
+  input.checkBlock_old({"n_min_core"});
 
   const auto omre = -std::abs(0.33 * wf.energy_gap());
 

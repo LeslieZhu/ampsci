@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wavefunction',['Wavefunction',['../classWavefunction.html',1,'']]],
-  ['wktable',['WkTable',['../classCoulomb_1_1WkTable.html',1,'Coulomb']]]
+  ['vector',['Vector',['../classLinAlg_1_1Vector.html',1,'LinAlg']]],
+  ['vertexqed',['VertexQED',['../classDiracOperator_1_1VertexQED.html',1,'DiracOperator']]]
 ];
