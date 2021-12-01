@@ -110,8 +110,7 @@ void atomicKernal(const IO::InputBlock &input, const Wavefunction &wf) {
   std::vector<std::vector<std::vector<float>>> AK; // float ok?
   // AK[i_dE][n_core]
   const auto num_states = wf.core.size();
-  AK.resize(desteps, std::vector<std::vector<float>>(
-                         num_states, std::vector<float>(qsteps)));
+  AK.resize(desteps, std::vector<std::vector<float>>(num_states));
 
   // Store state info (each orbital) [just useful for plotting!]
   std::vector<std::string> nklst; // human-readiable state labels (easy
@@ -155,8 +154,10 @@ void atomicKernal(const IO::InputBlock &input, const Wavefunction &wf) {
   std::cout << "Time for AK: " << timer.lap_reading_str() << "\n";
 
   // Write out to text file (in gnuplot friendly form)
-  if (text_out)
-    AKF::write_Knk_plaintext(fname, AK, nklst, qmin, qmax, demin, demax);
+  if (text_out) {
+    AKF::write_Knk_plaintext(fname, AK, nklst, qgrid, Egrid);
+    AKF::write_Ktot_plaintext(fname, AK, qgrid, Egrid);
+  }
   // //Write out AK as binary file
   if (bin_out) {
     AKF::akReadWrite(fname, true, AK, nklst, qmin, qmax, demin, demax);

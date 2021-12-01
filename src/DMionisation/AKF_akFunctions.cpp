@@ -1,6 +1,7 @@
 #include "DMionisation/AKF_akFunctions.hpp"
 #include "Angular/Wigner369j.hpp"
 #include "IO/FRW_fileReadWrite.hpp"
+#include "Maths/Grid.hpp"
 #include "Maths/NumCalc_quadIntegrate.hpp"
 #include "Maths/SphericalBessel.hpp"
 #include "Physics/AtomData.hpp"
@@ -113,8 +114,8 @@ calculateKpw_nk(const Wavefunction &wf, const DiracSpinor &psi, double dE,
 //******************************************************************************
 void write_Knk_plaintext(const std::string &fname,
                          const std::vector<std::vector<std::vector<float>>> &AK,
-                         const std::vector<std::string> &nklst, double qmin,
-                         double qmax, double demin, double demax)
+                         const std::vector<std::string> &nklst,
+                         const Grid &qgrid, const Grid &Egrid)
 // /*
 // Writes the K factor to a text-file, in GNU-plot readable format
 // XXX NOTE: Re-creates grids! Could use Grid class!
@@ -135,26 +136,65 @@ void write_Knk_plaintext(const std::string &fname,
     ofile << nk << " ";
   }
   ofile << "Sum\n\n";
-  for (auto i = 0ul; i < desteps; i++) {
-    for (auto k = 0ul; k < qsteps; k++) {
-      double x = double(k) / double(qsteps - 1);
-      if (qsteps == 1)
-        x = 0;
-      const double q = qmin * std::pow(qmax / qmin, x);
-      double y = double(i) / double(desteps - 1);
-      if (desteps == 1)
-        y = 0;
-      const double dE = demin * std::pow(demax / demin, y);
+  for (auto idE = 0ul; idE < desteps; idE++) {
+    for (auto iq = 0ul; iq < qsteps; iq++) {
+      const auto q = qgrid.r(iq);
+      const auto dE = Egrid.r(idE);
       ofile << dE / keV << " " << q / qMeV << " ";
       float sum = 0.0f;
       for (auto j = 0ul; j < num_states; j++) {
-        sum += AK[i][j][k];
-        ofile << AK[i][j][k] << " ";
+        sum += AK[idE][j][iq];
+        ofile << AK[idE][j][iq] << " ";
       }
       ofile << sum << "\n";
     }
     if (qsteps > 1)
       ofile << "\n";
+  }
+  ofile.close();
+}
+
+//******************************************************************************
+void write_Ktot_plaintext(
+    const std::string &fname,
+    const std::vector<std::vector<std::vector<float>>> &AK, const Grid &qgrid,
+    const Grid &Egrid)
+// /*
+// Writes the K factor to a text-file, in GNU-plot readable format
+// XXX NOTE: Re-creates grids! Could use Grid class!
+// XXX This mean we MUST use exponential Grid! Fix this! XXX
+// */
+{
+  const auto desteps = AK.size();       // dE
+  const auto num_states = AK[0].size(); // nk
+  const auto qsteps = AK[0][0].size();  // q
+
+  const double qMeV = (1.e6 / (PhysConst::Hartree_eV * PhysConst::c));
+  const double keV = (1.e3 / PhysConst::Hartree_eV);
+
+  std::ofstream ofile;
+  ofile.open(fname + "_tot.txt");
+  ofile
+      << "# K_tot(dE,q): dE is rows, q is cols; first row/col is dE/q values\n";
+  ofile << "q(MeV)/dE(keV)";
+  for (auto idE = 0ul; idE < desteps; idE++) {
+    const auto dE = Egrid.r(idE);
+    ofile << " " << dE / keV;
+  }
+  ofile << "\n";
+
+  for (auto iq = 0ul; iq < qsteps; iq++) {
+    const auto q = qgrid.r(iq);
+    ofile << q / qMeV;
+    for (auto idE = 0ul; idE < desteps; idE++) {
+
+      float AK_dEq = 0.0f;
+      for (auto j = 0ul; j < num_states; j++) {
+        AK_dEq += AK[idE][j][iq];
+      }
+      ofile << " " << AK_dEq;
+    }
+    ofile << "\n";
   }
   ofile.close();
 }
@@ -234,10 +274,10 @@ sphericalBesselTable(int max_L, const std::vector<double> &q_array,
   for (auto L = 0u; L <= unsigned(max_L); L++) {
     std::cout << "\rCalculating spherical Bessel look-up table for L=" << L
               << "/" << max_L << " .. " << std::flush;
-#pragma omp parallel for
+#pragma omp parallel for collapse(2)
     for (auto iq = 0ul; iq < qsteps; iq++) {
-      const double q = q_array[iq];
       for (auto ir = 0ul; ir < num_points; ir++) {
+        const double q = q_array[iq];
         double tmp = SphericalBessel::JL(int(L), q *r[ir]);
         // If q(dr) is too large, "missing" j_L oscillations
         //(overstepping them). This helps to fix that.

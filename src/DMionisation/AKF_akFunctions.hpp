@@ -3,6 +3,7 @@
 #include <vector>
 class Wavefunction;
 class DiracSpinor;
+class Grid;
 
 namespace AKF {
 
@@ -17,8 +18,17 @@ total]. Each row is a different value of q, and each 'block' is a different dE
 */
 void write_Knk_plaintext(const std::string &fname,
                          const std::vector<std::vector<std::vector<float>>> &AK,
-                         const std::vector<std::string> &nklst, double qmin,
-                         double qmax, double demin, double demax);
+                         const std::vector<std::string> &nklst,
+                         const Grid &qgrid, const Grid &Egrid);
+
+/*! Writes total K(dE,q) to text file
+@details
+Each q is a column, each dE is a row. First row/col is dE/q values
+*/
+void write_Ktot_plaintext(
+    const std::string &fname,
+    const std::vector<std::vector<std::vector<float>>> &AK, const Grid &qgrid,
+    const Grid &Egrid);
 
 //! Reads/writes entire K(E,q) [and req'd details] to disk in binary form [read
 //! in by dmeXsection program]
